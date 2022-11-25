@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;demo.exception&apos; to &apos;Code10-Try-Catch-Finally/src&apos;&#x0D;&#x0A;- Original project: &apos;Code09-Try-Catch&apos;&#x0D;&#x0A;- Destination element: &apos;Code10-Try-Catch-Finally/src&apos;&#x0D;&#x0A;- Original element: &apos;Code09-Try-Catch/src/demo.exception&apos;" description="Copy package" destination="=Code10-Try-Catch-Finally/src" element1="/src&lt;demo.exception" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1580470960637" version="1.0"/>
+</session>

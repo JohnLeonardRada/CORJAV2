@@ -1,0 +1,50 @@
+package demo;
+
+import java.io.*;
+import java.util.Date;
+
+import utility.Reader;
+
+public class CopyFilesDemo {
+	
+	public static void main(String [] args) {
+		
+		String fileName = "";
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+		
+		try {
+			BufferedReader bufferReader = new BufferedReader(new InputStreamReader(System.in));
+		
+			System.out.println("Enter your filename: ");
+			fileName = bufferReader.readLine();
+			
+			
+			fis = new FileInputStream(fileName);
+			
+
+			String targetFileName  = new Date().getTime()+ fileName;
+			
+			fos = new FileOutputStream(fileName);
+			int temp;
+			
+			do {
+				temp = fis.read();
+				
+				if(temp !=-1) {
+					fos.write(temp);
+				}
+			}while(temp != -1);
+			
+			System.out.println("\nSuccessfully created a backup file.");
+			System.out.println(targetFileName);
+			
+		} catch(FileNotFoundException fnfe) {
+			System.out.println("File not found - " + fnfe.getMessage());
+		} catch(IOException ioe) {
+			System.out.println("Exception ioe - " + ioe.getMessage());
+		}finally {}
+		
+		System.out.println("\nApplication terminated.");
+	}
+}

@@ -1,0 +1,75 @@
+package controller;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.sql.SQLException;
+
+import exceptions.*;
+import facility.*;
+import model.CustomerBean;
+
+
+public class MPController extends CustomerBean {
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+	CustomerBean customer = new CustomerBean();
+	
+	String fileName = "";
+	FileInputStream fis = null;
+	FileOutputStream fos = null;
+	
+	do{
+		try{
+			//customer.createConnection();
+			BufferedReader bufferReader = new BufferedReader(new InputStreamReader(System.in));
+			
+			System.out.println("Enter your filename: ");
+			fileName = bufferReader.readLine();
+			
+			
+			fis = new FileInputStream(fileName);
+			
+			int indexPeriod = fileName.indexOf(".");
+			String targetFileName  = fileName.substring(0, indexPeriod) + "_bak" + fileName.substring(indexPeriod++, fileName.length());
+			
+			fos = new FileOutputStream(targetFileName);
+			char data;
+			int temp;
+			
+			do {
+				temp = fis.read();
+				data = (char) temp;
+				if(temp !=-1) {
+					System.out.print(data);
+					fos.write(temp);
+//					CustomerBean cb = new CustomerBean();
+//					cb.CustomerBean();
+				}
+			}while(temp != -1);
+			
+			System.out.println("\nSuccessfully created a backup file.");
+			System.out.println(targetFileName);
+
+		}catch(InvalidProductPriceException ippe) {
+			System.err.println(ippe.getMessage());
+		}catch(InvalidCreditCardNumberLengthException iccnle){
+			System.err.println(iccnle.getMessage());
+		}catch(LuhnFailedAlgorithmException lfae){
+			System.err.println(lfae.getMessage());
+		}catch(FileNotFoundException fnfe) {
+			System.out.println("File not found - " + fnfe.getMessage());
+		}catch(IOException ioe){
+			System.out.println(ioe.getMessage());
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+	}while(ValidateCreditCard.isValid(fileName) == false || ValidateCreditCard.luhnTest(fileName)== false);
+	
+}
+}
+

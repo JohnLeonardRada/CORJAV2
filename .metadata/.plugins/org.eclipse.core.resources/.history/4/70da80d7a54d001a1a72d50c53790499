@@ -1,0 +1,21 @@
+package facility;
+
+import model.InvalidProductPriceException;
+
+public class ValidateProductPrice {
+
+	//PRICE VALIDATION
+	public static boolean ValidatePrice(double price){
+		
+		boolean isPositive = false;
+		
+		if(price > 0) {
+			isPositive = true;
+		}else {
+			isPositive = false;
+			throw new InvalidProductPriceException();
+		}
+		return isPositive;
+	}
+}
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="12.0.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList" id="ArrayList0">
+  <void method="add">
+   <object class="model.CustomerBean">
+    <void property="ccNumber">
+     <string>4895040388</string>
+    </void>
+    <void property="name">
+     <string>Luka Doncic</string>
+    </void>
+    <void property="product">
+     <object class="model.ProductBean">
+      <void property="price">
+       <double>123.0</double>
+      </void>
+      <void property="productName">
+       <string>Mi Mix Alpha</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="model.CustomerBean">
+    <void property="ccNumber">
+     <string>12345</string>
+    </void>
+    <void property="name">
+     <string>Michael Jordan</string>
+    </void>
+    <void property="product">
+     <object class="model.ProductBean">
+      <void property="price">
+       <double>112.0</double>
+      </void>
+      <void property="productName">
+       <string>Jordan 10</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="model.CustomerBean">
+    <void property="ccNumber">
+     <string>2353464356</string>
+    </void>
+    <void property="name">
+     <string>Lebron James</string>
+    </void>
+    <void property="product">
+     <object class="model.ProductBean">
+      <void property="price">
+       <double>7000.0</double>
+      </void>
+      <void property="productName">
+       <string>Nike Air Zoom</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+ <object idref="ArrayList0"/>
+ <object idref="ArrayList0"/>
+</java>

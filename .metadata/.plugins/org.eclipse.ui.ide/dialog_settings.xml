@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\akin2\Downloads\Hands-On-Exception-UDE-CC"/>
+		<item value="C:\Users\akin2\Downloads\Code17-Generics-GenericMethod"/>
+		<item value="C:\Users\akin2\Downloads\Code16-Generics-ConstrainedGenerics"/>
+		<item value="C:\Users\akin2\Downloads\Code15-Generics-GenericClass"/>
+		<item value="C:\Users\akin2\Downloads\Code14-FileOutputStream"/>
+		<item value="C:\Users\akin2\Downloads\Code13-FileInputStream"/>
+		<item value="C:\Users\akin2\Downloads\Code12-Exception-UDE-CC"/>
+		<item value="C:\Users\akin2\Downloads\Code11-Exception-Try-Finally"/>
+		<item value="C:\Users\akin2\Downloads\Code10-Exception-Try-Catch-Finally"/>
+		<item value="C:\Users\akin2\Downloads\Code09-Exception-Try-Catch"/>
+		<item value="C:\Users\akin2\Downloads\Code08-AbstractClasses-InterfaceInheritance-JDBC"/>
+		<item value="C:\Users\akin2\Downloads\Code08-AbstractClasses-InterfaceInheritance-JDBC (1)"/>
+		<item value="C:\Users\akin2\Downloads\MP1-Banking System"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

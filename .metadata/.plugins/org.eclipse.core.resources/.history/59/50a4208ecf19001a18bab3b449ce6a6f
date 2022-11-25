@@ -1,0 +1,18 @@
+package model;
+
+import java.sql.*;
+
+public interface DBOperations {
+	
+	String JDBC_DRIVER_NAME="com.mysql.jdbc.Driver";
+	String JDBC_URL="jdbc:mysql://localhost:3306/rada-sanjuan-corjav2-seg21-db";
+	String DB_USER_NAME="root";
+	String DB_PASSWORD="";
+	
+	String INSERT_RECORD = "insert into bank-account ("
+			+ "name, balance, accountNumber) values (?, ?, ?)";
+	
+	
+	Connection createConnection() throws ClassNotFoundException, SQLException;
+	boolean insertRecord() throws ClassNotFoundException, SQLException;
+}

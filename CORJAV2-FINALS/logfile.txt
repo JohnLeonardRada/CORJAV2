@@ -1,0 +1,32 @@
+
+
+Name: Luka Doncic
+Product: Mi Mix Alpha
+Price: 123.0
+CC Number: 4895040388
+ALERT!!! Invalid credit card number length
+Unsuccessful Transaction!
+
+
+Name: Kobe Bryant
+Product: iPhone 11 Pro
+Price: 123.0
+CC Number: 4895040388529378
+Customer credit card is valid
+Successful Transaction!
+
+
+Name: Michael Jordan
+Product: Jordan 10
+Price: 112.0
+CC Number: 12345
+ALERT!!! Invalid credit card number length
+Unsuccessful Transaction!
+
+
+Name: Lebron James
+Product: Nike Air Zoom
+Price: 7000.0
+CC Number: 2353464356
+ALERT!!! Invalid credit card number length
+Unsuccessful Transaction!
